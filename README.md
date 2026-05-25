@@ -11,7 +11,7 @@ This repository contains the 3D FDTD simulation models, Python (`gdspy`) layout 
 In silicon photonics, light traveling through an optical fiber is far too large (mode diameter ~10 µm) to directly enter a sub-micron on-chip waveguide. A grating coupler solves this mode-mismatch by acting as a microscopic diffraction grating. It intercepts the light shining down from a tilted fiber and scatters it perfectly horizontally at a 90-degree angle, shrinking and guiding the light into the planar waveguide mode. 
 
 ## ⚠️ The Engineering Challenge: Fixed Substrate Constraints
-Typically, grating couplers are optimized by adjusting the thickness of the waveguide and the underlying Buried Oxide (BOX) layer to force constructive interference between upward-scattering and downward-scattering light. 
+Typically, grating couplers are optimized by adjusting the thickness of the waveguide so that multiple modes cannot exist inside the waveguide, and by tuning the underlying Buried Oxide (BOX) layer to force constructive interference between upward‑scattering and downward‑scattering light. Because our institute does not have the layer deposition facility, the wafers must be purchased from outside with fixed papameters.
 
 This design achieved a remarkable **~38% coupling efficiency (~4.2 dB Insertion Loss)** under extreme, locked boundary conditions:
 
@@ -23,7 +23,7 @@ This design achieved a remarkable **~38% coupling efficiency (~4.2 dB Insertion 
 * **Pitch (Grating Period):** 0.76 µm
 * **Duty Cycle:** 0.51
 * **Etch Depth:** 0.366 µm (Shallow etch into the 1 µm base)
-* **Focusing Radius:** 40.0 µm
+* **Focusing Radius:** 40.4 µm
 * **Waveguide Width:** 0.45 µm
 
 ## 📊 Tuning Parameters & Their Effects on Transmission
