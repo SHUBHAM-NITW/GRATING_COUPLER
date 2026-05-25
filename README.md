@@ -58,10 +58,10 @@ Where $\beta$ is the propagation constant, $n_c$ is the cladding index, $\theta$
 Follow these instructions to successfully extract and merge your Lumerical 3D geometry into a finalized 2D GDSII layout.
 
 ### Phase 1: File Preparation
-* **Extract the GDS Files:** Begin by extracting the downloaded GDS export tool (`.zip` archive) into a new, dedicated folder on your computer.
-* **Transfer the Simulation File:** Place your targeted Lumerical simulation file (`.fsp` or `.lms`) directly into this newly extracted folder so it sits alongside the existing extraction scripts.
-* **Clean the Object Tree:** Open your simulation file in Lumerical and delete any unnecessary objects, monitors, or sources from the Objects Tree to speed up the extraction process.
-* **Flatten Structure Groups (Critical):** The extraction script cannot read nested geometries. If your target objects are inside a Structure Group (e.g., a grating array), you must break the group and drag the individual polygons/rectangles directly into the main model tree.
+* **Extract the GDS Files:** Begin by extracting the downloaded GDS tool (`.zip` archive) into a new, dedicated folder on your computer.
+* **Transfer the Simulation File:** Place your targeted Lumerical simulation file (`.fsp` or `.lms`) directly into this newly extracted folder so it sits alongside the existing extracted files.
+* **Clean the Object Tree:** Open your simulation file in Lumerical and delete any unnecessary objects, monitors, or sources from the Objects Tree so that only necessary object are transfer.
+* **Flatten Structure Groups (Critical):** The extraction script cannot read nested geometries. If your target objects are inside a Structure Group , you must break the group and drag the individual polygons/rectangles directly into the main model tree.
 
 ### Phase 2: Running the Extraction
 * **Execute the Script:** Open the Lumerical Script File Editor. Copy the contents of `code.txt`, paste it into the editor, and hit Run (or press F5).
@@ -70,12 +70,10 @@ Follow these instructions to successfully extract and merge your Lumerical 3D ge
 
 ### Phase 3: Merging the Final Layout
 * **Prepare the Merger:** Navigate into the output folder and open the `merge.py` script in your preferred text editor or Python IDE.
-* **Edit Filenames:** Inside the Python script, locate and edit the output file name variable to match what you want your finalized layout to be called.
-* **Run the Merge:** Execute the script from your command line (e.g., `py merge.py`). This will glue all the temporary pieces together into one final `.gds` file and automatically clean up the folder.
+* **Edit Filenames:** Inside the Python script, locate and edit the .gds file name variable with The files which you want to merge.
+* **Run the Merge:** Open CMD in the output folder directry and run the Python scrict (e.g., `py merge.py`). This will glue all the temporary pieces together into one final `.gds` file  and also create a .svg file for blender or any other software.
 
----
-*Simulated using Ansys Lumerical FDTD. Designed for foundry-compatible standard lithography processes.*
-"""
+
 
 ## 🛠️ Repository Contents
 * `simulation_files/`: Native Ansys Lumerical 3D FDTD project files (`.fsp`).
