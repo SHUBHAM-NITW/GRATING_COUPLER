@@ -42,7 +42,11 @@ Where $\beta$ is the propagation constant, $n_c$ is the cladding index, $\theta$
 | **Focusing Radius** | The initial sweeping curve radius of the grating arcs. | **Mode Field Matching.** Adjusting this ensures the curved wavefronts perfectly converge into the narrow width of the single-mode output waveguide. If the radius is misaligned with the focal length, the peak efficiency drops instantly without shifting the wavelength. |
 ## 📈 Graph
 <img width="1600" height="960" alt="Code_Generated_Image (13)" src="https://github.com/user-attachments/assets/c841416a-1500-4c04-afd5-6b1bdde034b9" />
+
+
 ## 🏦 Structure 
+
+
 ## 🗒️ Parameters
 <img width="554" height="305" alt="05-25-26-172307" src="https://github.com/user-attachments/assets/8d184b4a-ab1c-42ca-a958-1d7946ab227d" />
 <img width="875" height="382" alt="05-25-26-172330" src="https://github.com/user-attachments/assets/70f8f189-65da-41e0-ae2c-4035c7cab583" />
