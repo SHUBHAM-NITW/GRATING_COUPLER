@@ -40,6 +40,13 @@ Where $\beta$ is the propagation constant, $n_c$ is the cladding index, $\theta$
 | **Etch Depth** | How deep the trenches are carved into the $Si_3N_4$ slab. | **Controls Bandwidth & Scattering.** A deeper etch increases the index contrast, resulting in stronger scattering, a broader optical bandwidth, and a shorter coupling length. However, going too deep causes massive back-reflection into the fiber. |
 | **Fiber Tilt Angle** | The injection angle of the optical fiber (typically 8° to 12°). | **Massive Wavelength Shift.** Changing the angle drastically alters the Bragg phase-matching condition. An increased angle pushes the peak efficiency to significantly shorter wavelengths. We tilt the fiber to avoid 2nd-order Bragg reflections that would shoot light straight back up the fiber. |
 | **Focusing Radius** | The initial sweeping curve radius of the grating arcs. | **Mode Field Matching.** Adjusting this ensures the curved wavefronts perfectly converge into the narrow width of the single-mode output waveguide. If the radius is misaligned with the focal length, the peak efficiency drops instantly without shifting the wavelength. |
+## 📈 Graph
+<img width="1600" height="960" alt="Code_Generated_Image (13)" src="https://github.com/user-attachments/assets/c841416a-1500-4c04-afd5-6b1bdde034b9" />
+## 🏦 Structure 
+## 🗒️ Parameters
+<img width="554" height="305" alt="05-25-26-172307" src="https://github.com/user-attachments/assets/8d184b4a-ab1c-42ca-a958-1d7946ab227d" />
+<img width="875" height="382" alt="05-25-26-172330" src="https://github.com/user-attachments/assets/70f8f189-65da-41e0-ae2c-4035c7cab583" />
+<img width="638" height="466" alt="05-25-26-172348" src="https://github.com/user-attachments/assets/c94017f9-6a12-4d9b-af70-d664b57ea6cb" />
 
 ## 🛠️ Repository Contents
 * `simulation_files/`: Native Ansys Lumerical 3D FDTD project files (`.fsp`).
